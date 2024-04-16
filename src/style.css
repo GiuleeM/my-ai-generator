@@ -1,0 +1,275 @@
+.loadingText {
+  margin-left: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+  padding-top: 20vh;
+  margin: 0;
+  background-image: url('https://cdn.openai.com/API/images/gradient_card_1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.firstTitle,
+.secondTitle {
+  margin: 0;
+}
+
+.secondTitle {
+  font-weight: normal;
+}
+
+.inputClass {
+  width: 30vw;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  border: 3px solid white;
+}
+
+.inputClass:focus {
+  border: 3px solid white;
+}
+
+input:focus {
+  outline: none; /* Remove the default focus outline */
+  border: none; /* Remove the border when focused */
+}
+
+.buttonClass {
+  padding: 10px;
+  border-radius: 10px;
+  border: 3px solid skyblue;
+  background-color: transparent;
+  color: skyblue;
+  font-weight: bold;
+}
+
+.generateButton {
+  border-radius: 0 10px 10px 0;
+  width: 170px;
+}
+
+.generateButton:disabled {
+  opacity: 0.75;
+}
+
+.buttonClass:enabled:hover {
+  background-color: skyblue;
+  color: white;
+  cursor: pointer;
+}
+
+#imageContainer {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#imageContainer h3 {
+  text-align: center;
+}
+
+#imageContainer img {
+  border-radius: 10px;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 500px;
+  margin-bottom: 10vh;
+}
+
+.formContainer input {
+  padding: 10px;
+  border-radius: 10px;
+  border: transparent;
+}
+
+nav {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 60px);
+  font-size: 18px;
+  backdrop-filter: blur(10px);
+}
+
+.authNavLink {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.blurredContainer {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.15),
+    rgba(0, 0, 0, 0.25)
+  );
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.logo {
+  width: 5vh;
+  height: 5vh;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 1vh;
+}
+
+.logoContainer p {
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.rightSideNavbar {
+  display: flex;
+  gap: 3vh;
+  align-items: center;
+}
+
+.rightSideNavbar a {
+  font-weight: bold;
+  color: white;
+}
+
+.errorMessage {
+  color: tomato;
+}
+
+.signOutButton {
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0;
+}
+
+.navGreeting {
+  margin: 0;
+}
+
+.homeFeedContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.postContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.postHeaderContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postHeaderContainer p {
+  margin: 0;
+}
+
+.postTitle {
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.createdAt {
+  font-size: 14px;
+}
+
+.imagesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.imageItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageItem img {
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+.imageItem p {
+  font-weight: bold;
+}
+
+.bigLogo {
+  align-self: center;
+  width: 100px;
+  height: 100px;
+}
+
+.formContainer h1 {
+  text-align: center;
+}
+
+.goBackHome {
+  text-align: center;
+  color: white;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .logoContainer p {
+    display: none;
+  }
+
+  .navGreeting {
+    display: none;
+  }
+
+  .imagesContainer {
+    justify-content: center;
+  }
+
+  .formContainer {
+    width: 75%;
+  }
+}
