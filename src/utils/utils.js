@@ -1,4 +1,4 @@
-import { OPENAI_API_KEY } from "./keys";
+import { OPENAI_API_KEY } from "../keys";
 
 export async function generateImagePrompts(input) {
   const prompt = `Create 3 short titles that will be used as prompts for DALL-E of
